@@ -1,0 +1,32 @@
+{
+  "name": "floorquery",
+  "version": "1.0.1",
+  "description": "Modern jQuery drop-in replacement based on a floorjs script",
+  "homepage": "https://github.com/boyninja1555/floorquery#readme",
+  "bugs": {
+    "url": "https://github.com/boyninja1555/floorquery/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boyninja1555/floorquery.git"
+  },
+  "license": "MIT",
+  "author": "boyninja1555",
+  "type": "module",
+  "main": "dist/floorquery.cjs.js",
+  "module": "dist/floorquery.esm.js",
+  "browser": "dist/floorquery.umd.js",
+  "types": "dist/floorquery.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dist": "npm run build && npm publish --access public"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^1.0.0",
+    "rollup": "^4.60.1",
+    "rollup-plugin-copy": "^3.5.0"
+  }
+}

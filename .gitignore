@@ -1,0 +1,15 @@
+coverage/
+
+### Node ###
+dist/
+node_modules/
+package-lock.json
+npm-debug.log
+
+### IDEs ###
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
+*.log
