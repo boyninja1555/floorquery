@@ -8,7 +8,36 @@
 
 ## Installation
 
-NPM publish pending...
+**NPM**
+
+Run this command in a terminal/console:
+
+```bash
+npm i floorquery@latest
+```
+
+**CDN (supported for our fellow CDN-loving web devs)**
+
+Include this script tag above any other JavaScripts using Floorquery:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/floorquery@latest/dist/floorquery.umd.js"></script>
+```
+
+## General Usage
+
+Floorquery is focused on DOM manipulation. You select a list of elements like this:
+
+```javascript
+$q("#racecar")  // Element(s) with a "racecar" ID
+```
+
+If there are multiple elements returned, all functions with the capability will be affected. For example:
+
+```javascript
+$q(".superlinks").class(".supersuperlinks")  // Toggles the .supersuperlinks class on every element with the .superlinks class
+$("a").attr("href")  // Only the href= attribute of the first hyperlink found
+```
 
 ## Contribution
 
